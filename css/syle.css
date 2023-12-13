@@ -1,0 +1,183 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Edu TAS Beginner", cursive;
+  font-family: "Lato", sans-serif;
+  color: white;
+  /* animation: zoomIn 3s ease 1; */
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bi-envelope {
+  animation: blink 2s infinite;
+  transform: scale(1);
+  transition: 10s;
+}
+
+.bi-envelope:hover {
+  animation: blink 2s none;
+  transform: scale(5);
+  transition: 10s;
+}
+
+body {
+  background: linear-gradient(to bottom, #2b2a4c, #102031);
+}
+
+/* de navigatie balk */
+header {
+  height: 146px;
+  width: 98.9vw;
+  background: linear-gradient(to top, #2b2a4c, #264c74);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+nav li {
+  display: inline-block; /* Display list items inline */
+  margin-right: 10px; /* Adjust as needed for spacing between items */
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foto {
+  height: 102px;
+  width: 114px;
+  border-radius: 100%;
+  background-color: wheat;
+  transition: 600ms;
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+  margin: 20px;
+}
+.navigatieknop {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+}
+
+.navigatieknop :hover {
+  height: 60px;
+  width: 100px;
+  background: linear-gradient(45deg, #2b2a4c, #264c74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  transition: 600ms;
+  box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+}
+/* hier eindigt de header */
+
+/* hier begint de main */
+main {
+  height: 70vh;
+  width: auto;
+}
+/* begin text */
+.home {
+  height: 60vh;
+  width: 98vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+}
+#subtext {
+  text-align: center;
+}
+/* einde text */
+
+/* afbeeldingen */
+.pinkgoose {
+  margin: 10px;
+  height: 300px;
+  width: 400px;
+  border-radius: 50px;
+}
+/* einde afbeeldingen */
+
+/* footer */
+
+footer {
+  height: 146px;
+  width: 98.9vw;
+  background-color: #102031;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.footerknop {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+}
+.footerknop :hover {
+  height: 60px;
+  width: 100px;
+  background: #102031;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  transition: 600ms;
+  box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+}
+.email {
+  width: 300px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contact {
+  margin-left: 10px;
+}
+
+/* hier eindigt de footer */
+/* einde homepage desktop */
+
+/* start  telefoon homepage*/
+@media screen and (max-width: 600px) {
+body{
+  background-color: white;
+}
+  }
