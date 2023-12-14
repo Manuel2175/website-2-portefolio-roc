@@ -103,14 +103,11 @@ nav {
   transition: 600ms;
   box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
 }
-.menu {
-  display: none;
-}
 /* hier eindigt de header */
 
 /* hier begint de main */
 main {
-  height: 70vh;
+  height: 60vh;
   width: auto;
 }
 /* begin text */
@@ -138,6 +135,7 @@ main {
   width: 400px;
   border-radius: 50px;
 }
+
 /* einde afbeeldingen */
 
 /* footer */
@@ -187,17 +185,52 @@ footer {
 @media screen and (max-width: 600px) {
   nav {
     display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
-  }
-  header {
-    width: 100vw;
-    background: linear-gradient(to top, #2b2a4c, #264c74);
-    display: flex;
-
+    justify-content: center;
   }
 
   .foto {
+    display: none;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+  h2 {
+    font-size: x-small;
+  }
+  h3 {
+    font-size: small;
+  }
+  .navigatieknop {
+    height: 60px;
+    width: 70px;
+    margin: 10px;
+    background: linear-gradient(45deg, #2b2a4c, #264c74);
+    border-radius: 20%;
+    transition: 600ms;
+    box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+  }
+
+  /* einde navigatie balk */
+  .pinkgoose {
+    height: 130px;
+    width: 250px;
+    border-radius: 10%;
+  }
+  #title {
+    margin: 10px;
+  }
+  .text-homepage {
+    height: 120px;
+    width: 230px;
+  }
+  .home {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+  }
+  /* start footer */
+  .footerknop {
     display: none;
   }
 }
