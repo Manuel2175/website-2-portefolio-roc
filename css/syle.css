@@ -57,17 +57,22 @@ header {
   height: 146px;
   width: 98.9vw;
   background: linear-gradient(to top, #2b2a4c, #264c74);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 nav li {
   display: inline-block; /* Display list items inline */
   margin-right: 10px; /* Adjust as needed for spacing between items */
 }
 nav {
-  display: flex;
-  justify-content: space-around;
+  height: 146px;
+  width: 98.9vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+}
+.center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .foto {
   height: 102px;
@@ -97,6 +102,9 @@ nav {
   border-radius: 20%;
   transition: 600ms;
   box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+}
+.menu {
+  display: none;
 }
 /* hier eindigt de header */
 
@@ -138,9 +146,6 @@ footer {
   height: 146px;
   width: 98.9vw;
   background-color: #102031;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
 }
 .footerknop {
   height: 60px;
@@ -164,12 +169,15 @@ footer {
 .email {
   width: 300px;
   height: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 .contact {
   margin-left: 10px;
+}
+.gridfiller {
+  display: none;
 }
 
 /* hier eindigt de footer */
@@ -177,7 +185,19 @@ footer {
 
 /* start  telefoon homepage*/
 @media screen and (max-width: 600px) {
-body{
-  background-color: white;
-}
+  nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
   }
+  header {
+    width: 100vw;
+    background: linear-gradient(to top, #2b2a4c, #264c74);
+    display: flex;
+
+  }
+
+  .foto {
+    display: none;
+  }
+}
