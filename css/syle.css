@@ -147,25 +147,7 @@ footer {
   width: 100vw;
   background-color: #102031;
 }
-.footerknop {
-  height: 60px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
-}
-.footerknop :hover {
-  height: 60px;
-  width: 100px;
-  background: #102031;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20%;
-  transition: 600ms;
-  box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
-}
+
 .email {
   width: 300px;
   height: 20px;
