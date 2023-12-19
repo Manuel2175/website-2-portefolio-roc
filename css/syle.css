@@ -50,12 +50,14 @@ a {
 
 body {
   background: linear-gradient(to bottom, #2b2a4c, #102031);
+  overflow-x: hidden; /* Verberg horizontale schuifbalk */
+  overflow-y: auto; /* Toon verticale schuifbalk als nodig */
 }
 
 /* de navigatie balk */
 header {
   height: 146px;
-  width: 98.9vw;
+  width: 100vw;
   background: linear-gradient(to top, #2b2a4c, #264c74);
 }
 nav li {
@@ -64,7 +66,7 @@ nav li {
 }
 nav {
   height: 146px;
-  width: 98.9vw;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -108,12 +110,12 @@ nav {
 /* hier begint de main */
 main {
   height: 60vh;
-  width: auto;
+  width: 100vw;
 }
 /* begin text */
 .home {
-  height: 60vh;
-  width: 98vw;
+  height: 66vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -130,7 +132,6 @@ main {
 
 /* afbeeldingen */
 .pinkgoose {
-  margin: 10px;
   height: 300px;
   width: 400px;
   border-radius: 50px;
@@ -138,11 +139,12 @@ main {
 
 /* einde afbeeldingen */
 
-/* footer */
+/* footer,footerknoppen,footerknoppen animatie
+en email*/
 
 footer {
   height: 146px;
-  width: 98.9vw;
+  width: 100vw;
   background-color: #102031;
 }
 .footerknop {
@@ -213,7 +215,7 @@ footer {
 
   /* einde navigatie balk */
   .pinkgoose {
-    height: 130px;
+    height: 120px;
     width: 250px;
     border-radius: 10%;
   }
@@ -221,7 +223,7 @@ footer {
     margin: 10px;
   }
   .text-homepage {
-    height: 120px;
+    height: 140px;
     width: 230px;
   }
   .home {
@@ -233,4 +235,14 @@ footer {
   .footerknop {
     display: none;
   }
+  .bi-envelope {
+    animation: blink 2s infinite;
+    transform: scale(1);
+    transition: 10s;
+  }
+  
+  .bi-envelope:hover {
+    display: none;
+  }
 }
+/* einde pagina 1 */
