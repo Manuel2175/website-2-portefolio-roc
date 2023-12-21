@@ -28,7 +28,7 @@
 h1 {
   font-size: 72px;
 }
-h2 {
+p {
   font-size: x-large;
 }
 
@@ -47,26 +47,46 @@ a {
   transform: scale(5);
   transition: 10s;
 }
-
+#side-text p {
+  display: flex;
+  font-size: large;
+}
 body {
   background: linear-gradient(to bottom, #2b2a4c, #102031);
   overflow-x: hidden; /* Verberg horizontale schuifbalk */
   overflow-y: auto; /* Toon verticale schuifbalk als nodig */
 }
+.heroimg {
+  position: relative;
+}
 
+.heroimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+      45deg,
+      rgba(68, 158, 168, 0.52),
+      rgba(1, 26, 92, 0.668)
+    ),
+    url(http://127.0.0.1:5500/img/background.jpeg);
+  background-size: cover;
+  opacity: 0.5; /* Adjust the overlay opacity value as needed (0 to 1) */
+  z-index: -1;
+}
 /* de navigatie balk */
 header {
   height: 146px;
   width: 100vw;
-  background: linear-gradient(to top, #2b2a4c, #264c74);
 }
 nav li {
   display: inline-block; /* Display list items inline */
   margin-right: 10px; /* Adjust as needed for spacing between items */
 }
 nav {
-  height: 146px;
-  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -97,7 +117,33 @@ nav {
 .navigatieknop :hover {
   height: 60px;
   width: 100px;
-  background: linear-gradient(45deg, #2b2a4c, #264c74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  transition: 600ms;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(44, 58, 142, 0.52),
+      rgba(56, 69, 98, 0.668)
+    ),
+    url(http://127.0.0.1:5500/img/background.jpeg);
+  background-size: cover;
+  box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+}
+
+.doorclick-knop {
+  margin: 10px;
+  height: 100px;
+  width: 492px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(44, 58, 142, 0.52),
+      rgba(56, 69, 98, 0.668)
+    ),
+    url(http://127.0.0.1:5500/img/background.jpeg);
+  background-size: cover;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,19 +151,17 @@ nav {
   transition: 600ms;
   box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
 }
-/* hier eindigt de header */
 
-/* hier begint de main */
-main {
-  height: 60vh;
-  width: 100vw;
+.doorclick-knop:hover {
+  transform: scale(1.5);
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
 }
 /* begin text */
 .home {
   height: 66vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1.5fr);
   justify-items: center;
   align-items: center;
 }
@@ -143,7 +187,7 @@ main {
 en email*/
 
 footer {
-  height: 146px;
+  height: 102px;
   width: 100vw;
   background-color: #102031;
   display: flex;
@@ -163,70 +207,80 @@ footer {
 .gridfiller {
   display: none;
 }
-
 /* hier eindigt de footer */
 /* einde homepage desktop */
 
 /* start  telefoon homepage*/
 @media screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .foto {
-    display: none;
-  }
-
-  h1 {
-    font-size: medium;
-  }
-  h2 {
-    font-size: small;
-  }
-  h3 {
-    font-size: small;
-  }
-  .navigatieknop {
-    height: 60px;
-    width: 70px;
-    margin: 10px;
-    background: linear-gradient(45deg, #2b2a4c, #264c74);
-    border-radius: 20%;
-    transition: 600ms;
-    box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
-  }
-
-  /* einde navigatie balk */
-  .pinkgoose {
-    height: 120px;
-    width: 250px;
-    border-radius: 10%;
-  }
-  #title {
-    margin: 10px;
-  }
-  .text-homepage {
-    height: 140px;
-    width: 230px;
-  }
-  .home {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: auto;
-  }
-  /* start footer */
-  .footerknop {
-    display: none;
-  }
-  .bi-envelope {
-    animation: blink 2s infinite;
-    transform: scale(1);
-    transition: 10s;
-  }
+  @media screen and (max-width: 600px) {
+    nav {
+      display: flex;
+      justify-content: center;
+    }
   
-  .bi-envelope:hover {
-    display: none;
+    .foto {
+      display: none;
+    }
+  
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+    h3 {
+      font-size: 1em;
+    }
+  
+    .navigatieknop {
+      height: 60px;
+      width: 70px;
+      margin: 10px;
+      background: linear-gradient(45deg, #2b2a4c, #264c74);
+      border-radius: 20%;
+      transition: 600ms;
+      box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+    }
+  
+    .pinkgoose {
+      height: 120px;
+      width: 250px;
+      border-radius: 10%;
+    }
+  
+    #title {
+      margin: 10px;
+      text-align: center;
+    }
+  
+    .text-homepage {
+      text-align: center;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .bi-envelope {
+      animation: blink 2s infinite;
+      transform: scale(1);
+      transition: 10s;
+    }
+  
+    .bi-envelope:hover {
+      display: none;
+    }
+  
+    .doorclick-knop {
+      height: 60px;
+      width: 170px;
+    }
   }
 }
-/* einde pagina 1 */
