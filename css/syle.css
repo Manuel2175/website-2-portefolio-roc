@@ -145,9 +145,10 @@ nav {
   transform: scale(1.5);
   box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
 }
+
 /* begin text */
 .home {
-  height: 66vh;
+  height: 70.44vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1.5fr);
@@ -211,6 +212,10 @@ footer {
   font-size: small;
   color: gray;
 }
+.knoppen{
+  display: flex;
+  height: 100px;
+}
 /* hier eindigt de footer */
 /* einde homepage desktop */
 
@@ -221,7 +226,11 @@ footer {
     display: flex;
     justify-content: center;
   }
-
+  .social-blok :hover {
+    animation: none ;
+    transform: scale(1);
+    transition: 10s;
+  }
   .foto {
     display: none;
   }
@@ -314,6 +323,7 @@ footer {
   border-radius: 100px;
   box-shadow: 2px 2px 4px #000000;
 }
+
 .overmij {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -357,6 +367,7 @@ footer {
     gap: 10px;
   }
 
+  
   .website1 {
     height: 100%;
     max-height: 250px;
@@ -378,4 +389,37 @@ footer {
     font-size: small;
     margin: 10px 0;
   }
+}
+/* einde about pagina */
+
+/* begin contact pagina */
+.contact-formulier{
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border: #264c74;
+    background-color: #264c74;
+  
+}
+input textarea :focus{
+  border-bottom: 2px solid #000; /* Onderstreping bij focus */
+  animation: blink 1s infinite; /* Voeg de animatie toe aan het type lijntje */
+}
+form{
+  margin: 50px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+::placeholder{
+  padding: 15px;
 }
