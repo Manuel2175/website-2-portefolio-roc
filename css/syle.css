@@ -428,10 +428,53 @@ form {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
 }
-.info-portfolio{
+.info-portfolio {
   margin: 20px;
   text-align: center;
 }
-.kleine-tekst{
+.kleine-tekst {
   font-size: larger;
+}
+.portfolio {
+  height: 100vh;
+  max-height: 427px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-portfolio {
+  margin: 20px;
+}
+
+.kleine-tekst {
+  font-size: larger;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .portfolio-item {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .info-portfolio {
+    margin: 10px;
+  }
+
+  .kleine-tekst {
+    font-size: medium;
+  }
 }
