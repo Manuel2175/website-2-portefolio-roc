@@ -187,7 +187,7 @@ en email*/
 
 footer {
   height: 102px;
-  width: 98.9vw;
+  width: 100vw;
   background-color: #102031;
   display: flex;
   align-items: center;
@@ -296,7 +296,9 @@ footer {
   max-height: 450px;
   width: 60%;
   margin-bottom: 20px;
-  margin-left: 10px;
+  justify-self: center;
+  border-radius: 100px;
+  box-shadow:2px 2px 4px #000000;
 }
 .overmij {
   display: grid;
@@ -310,6 +312,8 @@ footer {
   width: 80%;
   margin-top: 10px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow:2px 2px 4px #000000;
 }
 #kleiner {
   height: 50px;
@@ -318,6 +322,7 @@ footer {
   text-align: center;
   margin: 10px;
 }
+
 .plaats {
   display: flex;
   justify-content: center;
