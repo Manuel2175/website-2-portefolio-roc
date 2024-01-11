@@ -39,17 +39,7 @@ a {
 ul {
   list-style: none;
 }
-.bi-envelope {
-  animation: blink 2s infinite;
-  transform: scale(1);
-  transition: 10s;
-}
 
-.bi-envelope:hover {
-  animation: blink 2s none;
-  transform: scale(5);
-  transition: 10s;
-}
 #side-text p {
   display: flex;
   font-size: large;
@@ -186,26 +176,40 @@ nav {
 en email*/
 
 footer {
-  height: 102px;
+  height: 156px;
   width: 100vw;
   background-color: #102031;
   display: flex;
-  align-items: center;
-  margin-top: 10px;
+  flex-direction: column;
+}
+.taakbalk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px;
 }
 
-.email {
-  width: 300px;
-  height: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+.social-blok {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: 10s;
 }
-.contact {
-  margin-left: 10px;
+.social-blok :hover {
+  animation: blink 2s none;
+  transform: scale(5);
+  transition: 10s;
 }
-.gridfiller {
-  display: none;
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.copyright-text{
+  font-size: small;
+  color: gray;
 }
 /* hier eindigt de footer */
 /* einde homepage desktop */
@@ -245,7 +249,17 @@ footer {
     transition: 600ms;
     box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
   }
-
+  .navigatieknop :hover{
+    height: 60px; /* Set the same height as default */
+    width: 100px; /* Set the same width as default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    transition: none; /* Remove transition if needed */
+    background-image: none; /* Remove background image */
+    box-shadow: none; /* Remove box shadow */
+  }
   .pinkgoose {
     height: 120px;
     width: 250px;
@@ -298,7 +312,7 @@ footer {
   margin-bottom: 20px;
   justify-self: center;
   border-radius: 100px;
-  box-shadow:2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #000000;
 }
 .overmij {
   display: grid;
@@ -313,7 +327,7 @@ footer {
   margin-top: 10px;
   margin: 10px;
   border-radius: 100px;
-  box-shadow:2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #000000;
 }
 #kleiner {
   height: 50px;
@@ -332,36 +346,36 @@ footer {
 @media screen and (max-width: 600px) {
   .foto-about {
     height: 100%;
-    max-height: 250px; 
-    width: 100%; 
-    margin-bottom: 10px; 
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
     margin-left: 0;
   }
 
   .overmij {
-    grid-template-columns: 1fr; 
-    gap: 10px; 
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .website1 {
     height: 100%;
-    max-height: 250px; 
+    max-height: 250px;
     width: 100%;
     margin-top: 10px;
     margin: 0;
   }
 
   #kleiner {
-    height: auto; 
-    width: 100%; 
+    height: auto;
+    width: 100%;
     font-size: medium;
-    margin: 10px 0; 
+    margin: 10px 0;
   }
-  
+
   #minder-groot {
-    height: auto; 
-    width: 100%; 
-    font-size: small; 
-    margin: 10px 0; 
+    height: auto;
+    width: 100%;
+    font-size: small;
+    margin: 10px 0;
   }
 }
