@@ -148,7 +148,7 @@ nav {
 
 /* begin text */
 .home {
-  height: 70.44vh;
+  height: 78.6vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1.5fr);
@@ -208,7 +208,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-.copyright-text{
+.copyright-text {
   font-size: small;
   color: gray;
 }
@@ -224,7 +224,7 @@ footer {
     justify-content: center;
   }
   .social-blok :hover {
-    animation: none ;
+    animation: none;
     transform: scale(1);
     transition: 10s;
   }
@@ -255,7 +255,7 @@ footer {
     transition: 600ms;
     box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
   }
-  .navigatieknop :hover{
+  .navigatieknop :hover {
     height: 60px; /* Set the same height as default */
     width: 100px; /* Set the same width as default */
     display: flex;
@@ -364,7 +364,6 @@ footer {
     gap: 10px;
   }
 
-  
   .website1 {
     height: 100%;
     max-height: 250px;
@@ -390,7 +389,7 @@ footer {
 /* einde about pagina */
 
 /* begin contact pagina */
-.contact-formulier{
+.contact-formulier {
   height: 500px;
   width: 100vw;
   display: flex;
@@ -398,25 +397,41 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-input{
-    height: 50px;
-    width: 400px;
-    border-radius: 10px;
-    border: #264c74;
-    background-color: #264c74;
-  
+input {
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+  border: #264c74;
+  background-color: #264c74;
 }
-input textarea :focus{
+input textarea :focus {
   border-bottom: 2px solid #000; /* Onderstreping bij focus */
   animation: blink 1s infinite; /* Voeg de animatie toe aan het type lijntje */
 }
-form{
+form {
   margin: 50px;
   height: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-::placeholder{
+::placeholder {
   padding: 15px;
+}
+/* einde contactpagina */
+
+.portfolio {
+  height: 100vh;
+  max-height: 427px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+.info-portfolio{
+  margin: 20px;
+  text-align: center;
+}
+.kleine-tekst{
+  font-size: larger;
 }
