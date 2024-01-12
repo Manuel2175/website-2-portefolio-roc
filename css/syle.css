@@ -328,17 +328,16 @@ footer {
   align-items: center;
 }
 .website1 {
-  height: 100%;
+  height: 100vh;
   max-height: 450px;
-  width: 80%;
-  margin-top: 10px;
+  width: 80vw;
   margin: 10px;
   border-radius: 100px;
   box-shadow: 2px 2px 4px #000000;
 }
 #kleiner {
   height: 50px;
-  width: 60%;
+  width: 60vw;
   font-size: large;
   text-align: center;
   margin: 10px;
@@ -419,62 +418,26 @@ form {
   padding: 15px;
 }
 /* einde contactpagina */
-
 .portfolio {
-  height: 100vh;
-  max-height: 427px;
-  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-}
-.info-portfolio {
-  margin: 20px;
-  text-align: center;
-}
-.kleine-tekst {
-  font-size: larger;
-}
-.portfolio {
-  height: 100vh;
-  max-height: 427px;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.portfolio-item {
+.onderelkaar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+}
+
+.portfolio-afbeelding {
+  max-width: 90%;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .info-portfolio {
   margin: 20px;
-}
-
-.kleine-tekst {
-  font-size: larger;
-}
-
-@media screen and (max-width: 600px) {
-  .portfolio {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-  }
-
-  .portfolio-item {
-    margin: 10px; /* Adjust margin for smaller screens */
-  }
-
-  .info-portfolio {
-    margin: 10px;
-  }
-
-  .kleine-tekst {
-    font-size: medium;
-  }
+  text-align: center;
 }
