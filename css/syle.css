@@ -65,7 +65,7 @@ body {
       rgba(68, 158, 168, 0.52),
       rgba(1, 26, 92, 0.668)
     ),
-    url(../img/zonder\ watermakerer.jpeg);
+    url(..\/img/achtergrond.jpeg);
   background-size: cover;
   opacity: 0.5; /* Adjust the overlay opacity value as needed (0 to 1) */
   z-index: -1;
@@ -116,7 +116,7 @@ nav {
   align-items: center;
   border-radius: 20%;
   transition: 600ms;
-  background-image: url(..\img/zonder\ watermakerer.jpeg);
+  background-image: url(..\img/achtergrond.jpeg);
   background-size: cover;
   box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
 }
@@ -218,95 +218,57 @@ footer {
 
 /* start  telefoon homepage*/
 
-@media screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  .social-blok :hover {
-    animation: none;
-    transform: scale(1);
-    transition: 10s;
-  }
-  .foto {
-    display: none;
-  }
+.navigatieknop:hover {
+  height: 60px; /* Set the same height as default */
+  width: 100px; /* Set the same width as default */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  transition: none; /* Remove transition if needed */
+  background-image: none; /* Remove background image */
+  box-shadow: none; /* Remove box shadow */
+}
+.pinkgoose {
+  height: 120px;
+  width: 250px;
+  border-radius: 10%;
+}
 
-  h1 {
-    font-size: 2em;
-    text-align: center;
-  }
+#title {
+  margin: 10px;
+  text-align: center;
+}
 
-  p {
-    font-size: 1.5em;
-    text-align: center;
-  }
+.text-homepage {
+  text-align: center;
+  margin: 10px;
+}
 
-  h3 {
-    font-size: 1em;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .navigatieknop {
-    height: 60px;
-    width: 70px;
-    margin: 10px;
-    background: linear-gradient(45deg, #2b2a4c, #264c74);
-    border-radius: 20%;
-    transition: 600ms;
-    box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
-  }
-  .navigatieknop :hover {
-    height: 60px; /* Set the same height as default */
-    width: 100px; /* Set the same width as default */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20%;
-    transition: none; /* Remove transition if needed */
-    background-image: none; /* Remove background image */
-    box-shadow: none; /* Remove box shadow */
-  }
-  .pinkgoose {
-    height: 120px;
-    width: 250px;
-    border-radius: 10%;
-  }
+.bi-envelope {
+  animation: blink 2s infinite;
+  transform: scale(1);
+  transition: 10s;
+}
 
-  #title {
-    margin: 10px;
-    text-align: center;
-  }
+.bi-envelope:hover {
+  transform: scale(1);
+}
 
-  .text-homepage {
-    text-align: center;
-    margin: 10px;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .bi-envelope {
-    animation: blink 2s infinite;
-    transform: scale(1);
-    transition: 10s;
-  }
-
-  .bi-envelope:hover {
-    transform: scale(1);
-  }
-
-  .doorclick-knop {
-    height: 60px;
-    width: 170px;
-  }
-  .doorclick-knop:hover {
-    transform: scale(1);
-    box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
-  }
+.doorclick-knop {
+  height: 60px;
+  width: 170px;
+}
+.doorclick-knop:hover {
+  transform: scale(1);
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
 }
 
 /* begin about pagina */
@@ -349,42 +311,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
-  .foto-about {
-    height: 100%;
-    max-height: 250px;
-    width: 100%;
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
 
-  .overmij {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .website1 {
-    height: 100%;
-    max-height: 250px;
-    width: 100%;
-    margin-top: 10px;
-    margin: 0;
-  }
-
-  #kleiner {
-    height: auto;
-    width: 100%;
-    font-size: medium;
-    margin: 10px 0;
-  }
-
-  #minder-groot {
-    height: auto;
-    width: 100%;
-    font-size: small;
-    margin: 10px 0;
-  }
-}
 /* einde about pagina */
 
 /* begin contact pagina */
@@ -403,7 +330,7 @@ input {
   border: #264c74;
   background-color: #264c74;
   caret-color: aqua;
-text-indent: 15px;
+  text-indent: 15px;
 }
 input textarea :focus {
   border-bottom: 2px solid #000; /* Onderstreping bij focus */
@@ -440,4 +367,7 @@ form {
 .info-portfolio {
   margin: 20px;
   text-align: center;
+}
+.concistancy {
+  margin: 20px;
 }

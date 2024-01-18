@@ -1,0 +1,74 @@
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .social-blok :hover {
+    animation: none;
+    transform: scale(1);
+    transition: 10s;
+  }
+  .foto {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .navigatieknop {
+    height: 60px;
+    width: 100px;
+    margin: 10px;
+    background: linear-gradient(45deg, #2b2a4c, #264c74);
+    border-radius: 20%;
+    transition: 600ms;
+    box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
+  }
+
+
+  .foto-about {
+    height: 100%;
+    max-height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .overmij {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .website1 {
+    height: 100%;
+    max-height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    margin: 0;
+  }
+
+  #kleiner {
+    height: auto;
+    width: 100%;
+    font-size: medium;
+    margin: 10px 0;
+  }
+
+  #minder-groot {
+    height: auto;
+    width: 100%;
+    font-size: small;
+    margin: 10px 0;
+  }
+}
