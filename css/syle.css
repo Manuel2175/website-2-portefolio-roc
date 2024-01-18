@@ -402,6 +402,8 @@ input {
   border-radius: 10px;
   border: #264c74;
   background-color: #264c74;
+  caret-color: aqua;
+text-indent: 15px;
 }
 input textarea :focus {
   border-bottom: 2px solid #000; /* Onderstreping bij focus */
@@ -414,9 +416,7 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-::placeholder {
-  padding: 15px;
-}
+
 /* einde contactpagina */
 .portfolio {
   display: grid;
