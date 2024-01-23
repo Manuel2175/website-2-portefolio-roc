@@ -39,7 +39,8 @@
 
   .foto-about {
     height: 100%;
-    max-height: 250px;
+    max-height: 350px;
+    max-width: 200px;
     width: 100%;
     margin-bottom: 10px;
     margin-left: 0;
