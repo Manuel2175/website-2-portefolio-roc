@@ -1,17 +1,23 @@
 @media screen and (max-width: 600px) {
+  /* zorgt ervoor dat de navigatie balk gecenterd wordt */
   nav {
     display: flex;
     justify-content: center;
   }
+
+  /* zorgt ervoor dat het hoover effect weg gaat als je op mobiel bent
+   */
   .social-blok :hover {
     animation: none;
     transform: scale(1);
     transition: 10s;
   }
+  /* haalt de foto weg uit de navigatie balk */
   .foto {
     display: none;
   }
 
+  /* maakt de tekst kleiner */
   h1 {
     font-size: 2em;
     text-align: center;
@@ -25,7 +31,7 @@
   h3 {
     font-size: 1em;
   }
-
+/* haalt de hover weg bij de navigatie knoppen */
   .navigatieknop {
     height: 60px;
     width: 100px;
@@ -36,7 +42,7 @@
     box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
   }
 
-
+  /* maakt de about foto kleiner  */
   .foto-about {
     height: 100%;
     max-height: 350px;
@@ -46,11 +52,12 @@
     margin-left: 0;
   }
 
+  /* zorgt ervoor dat alles p de about pagina onder elkaar gaat */
   .overmij {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-
+  /* maakt de abeelding kleiner */
   .website1 {
     height: 100%;
     max-height: 250px;
@@ -58,14 +65,14 @@
     margin-top: 10px;
     margin: 0;
   }
-
+/* maakt de titel kleienr */
   #kleiner {
     height: auto;
     width: 100%;
     font-size: medium;
     margin: 10px 0;
   }
-
+/* maakt de tekst kleiner */
   #minder-groot {
     height: auto;
     width: 100%;

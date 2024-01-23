@@ -1,3 +1,6 @@
+
+/* in het * zorgt voor de juiste lettertype en tekst kleur
+ook haalt het de padding en margin weg*/
 * {
   padding: 0px;
   margin: 0px;
@@ -6,6 +9,8 @@
   color: white;
   /* animation: zoomIn 3s ease 1; */
 }
+/* deze keyframes zijn gemaakt om de knoppen een zoom in
+ en knipper effect te geven */
 @keyframes zoomIn {
   from {
     transform: scale(0);
@@ -25,6 +30,8 @@
     opacity: 1;
   }
 }
+/* de h1 en p zorgen ervoor dat de tekst
+ de jusite groote heeft */
 h1 {
   font-size: 72px;
   margin: 10px;
@@ -32,23 +39,32 @@ h1 {
 p {
   font-size: x-large;
 }
-
+/* dit zorgt ervoor dat er geen automatische style wordt
+ toegepast aan de knoppen */
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
-
+/* dit is om de tekstmooi neer tezetten 
+en de juiste groote te geven */
 #side-text p {
   display: flex;
   font-size: large;
 }
+
+/* dit zorgt ervoor dat de achtergrond een mooie blauwe gradient krijgt 
+en de overflow naar rechts weg gaat */
 body {
   background: linear-gradient(45deg, #2b2a4c, #264c74);
   overflow-x: hidden; /* Verberg horizontale schuifbalk */
   overflow-y: auto; /* Toon verticale schuifbalk als nodig */
 }
+
+/* de heroimg class en de before psuedo class erbij 
+zorgen ervoor dat de home page een goede achtergrond afbeelding 
+heeft */
 .heroimg {
   position: relative;
 }
@@ -70,7 +86,13 @@ body {
   opacity: 0.5; /* Adjust the overlay opacity value as needed (0 to 1) */
   z-index: -1;
 }
-/* de navigatie balk */
+
+
+/* de navigatie balk met alle knoppen en foto 
+waarin de knoppen knoppen in het middes worden gezet en 
+met een goed hoover effect
+en de afbeelding een circle wordt die links van het scherm
+ staat */
 header {
   height: 146px;
   width: 100vw;
@@ -121,6 +143,9 @@ nav {
   box-shadow: 1px 1px 2px #000000, -1px -1px 2px #ffffff;
 }
 
+/* de doorclik knoppen zijn het zelfde als de navigatie
+ knoppen maar staan op de homepage in het midden van je scherm
+ inplaats van de header */
 .doorclick-knop {
   margin: 10px;
   height: 100px;
@@ -146,7 +171,9 @@ nav {
   box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
 }
 
-/* begin text */
+/* de home class zorgt ervoor dat de home pagina de jusite style krijgt
+en alles goed opsplit met een grid systeem
+ook zorgt het voor de tekst positie */
 .home {
   height: 78.6vh;
   width: 100vw;
@@ -164,18 +191,14 @@ nav {
 }
 /* einde text */
 
-/* afbeeldingen */
-.pinkgoose {
-  height: 300px;
-  width: 400px;
-  border-radius: 50px;
-}
 
-/* einde afbeeldingen */
 
 /* footer,footerknoppen,footerknoppen animatie
 en email*/
-
+/* de footer zorgt ervoor dat de social knoppen 
+goed worden opgesplitst en op de juiste manier naast elkaar gaan staan
+  /*het social blok element zorgt ervoor dat
+  de social knoppen 50 bij 50 pixels worden en goede hoover */ 
 footer {
   height: 156px;
   width: 100vw;
@@ -204,6 +227,7 @@ footer {
   transform: scale(5);
   transition: 10s;
 }
+/* de copyright class zorgt voor de kleine copyright tekst onderaan de pagina */
 .copyright {
   display: flex;
   justify-content: center;
@@ -216,63 +240,12 @@ footer {
 /* hier eindigt de footer */
 /* einde homepage desktop */
 
-/* start  telefoon homepage*/
 
-.navigatieknop:hover {
-  height: 60px; /* Set the same height as default */
-  width: 100px; /* Set the same width as default */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20%;
-  transition: none; /* Remove transition if needed */
-  background-image: none; /* Remove background image */
-  box-shadow: none; /* Remove box shadow */
-}
-.pinkgoose {
-  height: 120px;
-  width: 250px;
-  border-radius: 10%;
-}
-
-#title {
-  margin: 10px;
-  text-align: center;
-}
-
-.text-homepage {
-  text-align: center;
-  margin: 10px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.bi-envelope {
-  animation: blink 2s infinite;
-  transform: scale(1);
-  transition: 10s;
-}
-
-.bi-envelope:hover {
-  transform: scale(1);
-}
-
-.doorclick-knop {
-  height: 60px;
-  width: 170px;
-}
-.doorclick-knop:hover {
-  transform: scale(1);
-  box-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff; /* Adjust the box shadow */
-}
 
 /* begin about pagina */
-
+/* foto about zorgt ervoor dat mijn foto
+een mooi blok wordt van maximaal 450 bij 350 pixels
+een mooie hoekafwerking en schaduw krijgt */
 .foto-about {
   height: 100%;
   max-height: 450px;
@@ -284,12 +257,21 @@ main {
   box-shadow: 2px 2px 4px #000000;
 }
 
+/* de overmij zorgt voor de positie van de foto en tekst 
+zodat ze mooi met een grid in tweeën worden gesplit en 
+gecenterd worden */
 .overmij {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   align-items: center;
 }
+
+/* website1 en kleiner zorgen voor een voorproefje van mijn portfolio
+onderaand e pagina staat de teskt in een vankje van 50 pixels en breedte zelfde groote als de tekst
+en ze staan gecenterd onder elkaar eerst de tekst dan de afbeelding
+afbeelding heeft zelfde style als de foto van mij alleen net wat breeder
+ */
 .website1 {
   height: 100vh;
   max-height: 450px;
@@ -306,6 +288,7 @@ main {
   margin: 10px;
 }
 
+/* de  afbeelding van een website in mijn portfolio om te centeren */
 .plaats {
   display: flex;
   justify-content: center;
@@ -316,6 +299,9 @@ main {
 /* einde about pagina */
 
 /* begin contact pagina */
+/* maakt het contact formulier aan van 500 px bij 100% van het scherm
+hij wordt gecenterend en de 5 input vakken worden eerlijk erin verdeeld
+met 20 pixels tussen elke */
 .contact-formulier {
   height: 500px;
   width: 100vw;
@@ -324,6 +310,8 @@ main {
   align-items: center;
   justify-content: space-evenly;
 }
+/* zorgt voor de input vakken en maakt ze 50 bij 400 pixels met afgewerkte hoeken
+ook zorgt voor een baluwe achtergrond*/
 input {
   height: 50px;
   width: 400px;
@@ -333,10 +321,14 @@ input {
   caret-color: aqua;
   text-indent: 15px;
 }
+/* zorgt voor het knipernend lijntje die je ziet tijdens het typen */
 input textarea :focus {
   border-bottom: 2px solid #000; /* Onderstreping bij focus */
   animation: blink 1s infinite; /* Voeg de animatie toe aan het type lijntje */
 }
+
+/* form zorgt ervoor dat alles mooi in een vak staat en eerlijk wordt 
+verdeeld over het vak */
 form {
   margin: 50px;
   height: 500px;
@@ -346,6 +338,10 @@ form {
 }
 
 /* einde contactpagina */
+/* begin portfolio pagina */
+/* zorgt ervoor dat alles staat op gedeeld in een grid systeem
+waarbij alle afbeelding boven naast elkaar staan en de bij behorende
+tekst naast elkaar eronder */
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -369,6 +365,8 @@ form {
   margin: 20px;
   text-align: center;
 }
+
+/* concistancy zorgt ervoor dat op elke pagina de zzelfde ruimte tussen de header en footer zit */
 .concistancy {
   margin: 20px;
 }
